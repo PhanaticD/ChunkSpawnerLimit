@@ -1,0 +1,15 @@
+name: ChunkSpawnerLimit
+version: ${project.version}
+main: com.phanaticmc.chunkspawnerlimit.ChunkSpawnerLimit
+authors: [PhanaticD]
+description: Limit the amount of spawners by chunk
+api-version: 1.13
+commands:
+  spawnerlist:
+    description: lists spawners
+    usage: /spawnerlist
+    default: op
+  spawnerdelete:
+    description: deletes spawners
+    usage: /spawnerdelete
+    default: op
