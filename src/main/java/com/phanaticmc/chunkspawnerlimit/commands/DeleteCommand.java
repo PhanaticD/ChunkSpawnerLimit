@@ -24,7 +24,7 @@ public class DeleteCommand implements CommandExecutor {
 			for (Chunk chunk : world.getLoadedChunks()) {
 				int spawnercount = 0;
 				for (BlockState block : chunk.getTileEntities()) {
-					if (block instanceof CreatureSpawner) {
+					if (block.getType() == spawnermat) {
 						spawnercount++;
 						if (spawnercount > limit) {
 							sender.sendMessage("Deleting Spawner: " + block.getLocation().getBlockX() + " " + block.getLocation().getBlockY() + " " + block.getLocation().getBlockZ() + " " + block.getLocation().getWorld().getName());
