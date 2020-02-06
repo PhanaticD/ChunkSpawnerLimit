@@ -8,8 +8,15 @@ commands:
   spawnerlist:
     description: lists spawners
     usage: /spawnerlist
-    default: op
+    permission: chunkspawnerlimit.list
   spawnerdelete:
     description: deletes spawners
     usage: /spawnerdelete
+    permission: chunkspawnerlimit.delete
+permissions:
+  chunkspawnerlimit.list:
+    description: Allows list command
+    default: op
+  chunkspawnerlimit.delete:
+    description: Allows delete command
     default: op
